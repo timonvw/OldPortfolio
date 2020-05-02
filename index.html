@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--Every great developer you know got there by solving problems they were unqualified to solve until they actually did it-->
+<html id="html">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no">
+    <title>Timon van Waardhuizen</title>
+    <meta name="author" content="Timon van Waardhuizen">
+    <meta name="description" content="Portfolio Timon van Waardhuizen Game/Media Developer">
+    
+    <meta name="theme-color" content="#5C97BF"/>
+    <meta name="msapplication-navbutton-color" content="#5C97BF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body onload="RemoveLoaderTimer()">
+<!--===================================HEADER================================-->
+    <header id="header" class="unselectable">
+        <a href="#over" class="headerName">timon van waardhuizen.</a>
+        <div class="header-actions">
+            <a id="javas0" href="#over">over</a>
+            <a id="javas1" href="#vaardigheden">vaardigheden</a>
+            <a id="javas2" href="#ervaring">ervaring</a>
+            <a id="javas3" href="#portfolio">portfolio</a>
+            <a id="javas4" href="#contact">contact</a>
+        </div>
+    </header>
+    <a name="over"></a>
+    <div class="unselectable" id="header-image"></div>
+    
+<!--==========================ToTopButton en Menu mobile=======================-->
+    
+    <div id="menuHidden" class="menuOverlay">
+        <a href="javascript:void(0)" class="closeButton" onclick="CloseMenuButtonClick()">&times;</a>
+        <div class="menuOverlay-actions">
+            <a href="#over" style="font-family: 'Ubuntu';" onclick="CloseMenuButtonClick()"><b>timon van waardhuizen.</b></a><br><br>
+            <a href="#over" onclick="CloseMenuButtonClick()">over</a>
+            <a href="#vaardigheden" onclick="CloseMenuButtonClick()">vaardigheden</a>
+            <a href="#ervaring" onclick="CloseMenuButtonClick()">ervaring</a>
+            <a href="#portfolio" onclick="CloseMenuButtonClick()">portfolio</a>
+            <a href="#contact" onclick="CloseMenuButtonClick()">contact</a>
+        </div>
+    </div>
+
+    <div id="loader"><div id="loadSign" title="website is aan het inladen.">
+        <script type='text/javascript'>
+            loadingText();
+        </script>
+    </div></div>
+
+    <button onclick="ToTopButtonClick()" id="topButton" title="naar boven.">&uarr;</button>
+    <button onclick="OpenMenuButtonClick()" id="menuButton" title="open menu.">menu.</button>
+    <div id="cart"><button id="cart_b" title="open winkelmand."><img class="unselectable" src="Images/cart2.png" width="40px"></button>
+        <div id="cart_info"><br>Winkelwagen is leeg.</div>
+    </div>
+
+<!--===================================Over==================================-->
+    <div class="container">
+        <div id="profile">
+            <div><img class="unselectable" id="profilePicture" src="Images/PPP.png" alt="" width="500px"></div>
+            <div id="intro">
+                <h2>Ik ben <b>Timon van Waardhuizen</b><br><i>Web/Game Developer</i></h2>
+                <div id="intro_info">
+                    <ul>
+                        <li>
+                            <br><strong>leeftijd.</strong>
+                            <br><span>22</span>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>adres.</strong>
+                            <br><span>Nederland, Rotterdam</span>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>e-mail.</strong>
+                            <br><span>Timonvanwaardhuizen@gmail.com</span>
+                        </li>
+                    </ul>
+                    <br>
+                    <a href="https://www.linkedin.com/in/timonvanwaardhuizen/" target="_blank"><img src="Images/linkedin.png" width="50px" class="unselectable"></a>
+                    <a href="https://github.com/timonvw" target="_blank"><img src="Images/github.png" width="50px" class="unselectable"></a>
+                    <a href="https://stackoverflow.com/users/6214178/timonvw?tab=profile" target="_blank"><img src="Images/stack.png" width="50px" class="unselectable"></a>
+                    <a href="https://www.facebook.com/timon.vanwaardhuizen" target="_blank"><img src="Images/facebook.png" width="50px" class="unselectable"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--================================Vaardigheden=============================-->
+    <a name="vaardigheden"><br><br></a>
+    <div class="container">
+        <h1>vaardigheden.</h1>
+    </div>
+    <div class="container">
+        <div class="back_div" id="skils">
+            <!--========html bar==========-->
+            <div class="bar_l">
+                <div class="bar_item"><label>HTML & CSS</label></div>
+                <div class="bar_procent"><label>90%</label></div>
+                <br><div class="bar_border">
+                    <div class="bar_inner" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <!--========C#==========-->
+            <div class="bar_r">
+                <div class="bar_item"><label>C#</label></div>
+                <div class="bar_procent"><label>80%</label></div>
+                <br><div class="bar_border">
+                    <div class="bar_inner" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <!--========JavaScript==========-->
+            <div class="bar_l">
+                <div class="bar_item"><label>JavaScript</label></div>
+                <div class="bar_procent"><label>60%</label></div>
+                <br><div class="bar_border">
+                    <div class="bar_inner" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <!--========PHP MYSQL==========-->
+            <div class="bar_r">
+                <div class="bar_item"><label>PHP & MySQL</label></div>
+                <div class="bar_procent"><label>60%</label></div>
+                <br><div class="bar_border">
+                    <div class="bar_inner" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <!--========AngularJS==========-->
+            <div class="bar_l">
+                <div class="bar_item"><label>AngularJS</label></div>
+                <div class="bar_procent"><label>10%</label></div>
+                <br><div class="bar_border">
+                    <div class="bar_inner" style="width: 10%;"></div>
+                </div>
+            </div>
+
+            <!--========Unity==========-->
+            <div class="bar_r">
+                <div class="bar_item"><label>Unity</label></div>
+                <div class="bar_procent"><label>80%</label></div>
+                <br><div class="bar_border">
+                    <div class="bar_inner" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--=================================Ervaring===============================-->
+    <a name="ervaring"><br><br></a>
+    <div class="container">
+        <h1>ervaring.</h1>
+    </div>
+    <div class="container">
+        <div class="back_div" id="work">
+            <p>Dit onderdeel is momenteel in onderhoud.</p>
+        </div>
+    </div>
+
+<!--=================================Portfolio==============================-->
+    <a name="portfolio"><br><br></a>
+    <div class="container">
+        <h1>portfolio.</h1>
+    </div>
+    <div class="container">
+        <div class="back_div" id="portf">
+            <!-- In de toekomst komt dit natuurlijk uit de database en gaat eht met een foreach loop-->
+
+            <!--========reserveer==========-->
+            <div class="p_block">
+                <img class="p_img" src="Images/dummy.jpg">
+                <h3>Reserveersysteem</h3>
+                <button class="p_button_r" value="reserveer"><img class="unselectable" src="Images/info_icon.png" width="26px"><!--<img class="unselectable" src="Images/money_icon.png" width="26px">--></button>
+            </div>
+            <!--========vuur spel==========-->
+            <div class="p_block">
+                <img class="p_img" src="Images/vuurspel.png">
+                <h3>Het Vuurspel</h3>
+                <button class="p_button_r" value="vuur"><img class="unselectable" src="Images/info_icon.png" width="26px"><!--<img class="unselectable" src="Images/money_icon.png" width="26px">--></button>
+            </div>
+            <!--========circus=============-->
+            <div class="p_block">
+                <img class="p_img" src="Images/circus.png">
+                <h3>Pillo: Circus Utilla</h3>
+                <button class="p_button_r" value="circus"><img class="unselectable" src="Images/info_icon.png" width="26px"></button>
+            </div>
+            <!--========testronaut=========-->
+            <div class="p_block">
+                <img class="p_img" src="Images/astronaut.png">
+                <h3>Pillo: Testronaut</h3>
+                <button class="p_button_r" value="testronaut"><img class="unselectable" src="Images/info_icon.png" width="26px"></button>
+            </div>
+        </div>
+    </div>
+    <!--=================================================================-->
+    <!--===================Portfolio extra info boxes====================-->
+    <!--=================================================================-->
+    
+    <!-- In de toekomst komt dit natuurlijk uit de database en gaat het met een foreach loop-->
+
+    <!--========reserveer==========-->
+    <div class="p_info" id="reserveer">
+        <div class="container_full_center">
+            <div class="p_info_box">
+                <button class="p_info_close_b" value="reserveer">&times;</button>
+                <h2>Reserveersysteem</h2>
+                <p>Dit is een reserveersysteem met bijbehorende cms. Gemaakt voor Leenheer Administraties als school project. 
+                <br><br>Bekijk<a href="https://timonvanwaardhuizen.nl/leenheer/index.php" target="_blank"> hier</a> het reserveer systeem.</p>
+                <!--<button class="p_info_buy_b" value="reserveer">kopen.</button>
+                <label>Prijs  &euro;150</script></label>-->
+            </div>
+        </div>
+    </div>
+
+    <!--========vuurspel==========-->
+    <div class="p_info" id="vuur">
+        <div class="container_full_center">
+            <div class="p_info_box">
+                <button class="p_info_close_b" value="vuur">&times;</button>
+                <h2>Het Vuurspel</h2>
+                <p>Het Vuurspel is een interactief spel voor kleuters. Ren heen en weer over de speelmat en blus alle vuurtjes.
+                    Dit spel is gemaakt met een Arduino en Unity3D en is ontwikkeld als school project.
+                <br><br>Bekijk<a href="https://stud.hosted.hr.nl/0926313/websites/Onepager2/" target="_blank"> hier</a> de website voor meer informatie.</p>
+                <!--<button class="p_info_buy_b" value="vuur">kopen.</button>
+                <label>Prijs  &euro;30</script></label>-->
+            </div>
+        </div>
+    </div>
+
+    <!--========circus utilla==========-->
+    <div class="p_info" id="circus">
+        <div class="container_full_center">
+            <div class="p_info_box">
+                <button class="p_info_close_b" value="circus">&times;</button>
+                <h2>Pillo: Circus Utilla</h2>
+                <p>Circus Utilla is een spel dat ik tijdens mijn stage bij Pillo heb ontwikkeld samen met 1 andere developer en een groep game artists.
+                    Het is een spel voor in de gezondheids zorg. 
+                <br><br>Bekijk<a href="https://pillo.nl/game/circus-utilla/" target="_blank"> hier</a> de website voor meer informatie.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--========testronaut==========-->
+    <div class="p_info" id="testronaut">
+        <div class="container_full_center">
+            <div class="p_info_box">
+                <button class="p_info_close_b" value="testronaut">&times;</button>
+                <h2>Pillo: Testronaut</h2>
+                <p>Testronaut is een spel dat ik tijdens mijn stage bij Pillo heb ontwikkeld samen met 1 andere developer en een groep game artists.
+                    Het is een spel voor in de gezondheids zorg. 
+                <br><br>Bekijk<a href="https://pillo.nl/game/testronaut/" target="_blank"> hier</a> de website voor meer informatie.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--=================================Contact=============================-->
+    <a name="contact"><br><br></a>
+    <div class="container">
+        <h1>contact.</h1>
+    </div>
+    <div class="container">
+        <div class="back_div" id="contac">
+            <form action="" method="post">
+                <input class="input" type="text" placeholder="Naam" required>
+                <input class="input" type="email" placeholder="E-mail" required>
+                <input class="input" type="text" placeholder="Onderwerp" required>
+                <textarea class="input" placeholder="Bericht" required></textarea>
+                <br><input class="p_info_buy_b" id="sbutton" type="submit" value="verzenden.">
+            </form>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+    <footer><br><br>who needs a footer.</footer>
+</body>
+</html>
